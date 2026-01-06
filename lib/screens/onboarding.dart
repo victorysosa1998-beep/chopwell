@@ -17,7 +17,7 @@ class OnboardingScreen extends StatelessWidget {
               children: [
                 // Center Large Image
                 Positioned(
-                  top: 210,
+                  top: 185,
                   child: Container(
                     width: 200,
                     height: 200,
@@ -36,11 +36,31 @@ class OnboardingScreen extends StatelessWidget {
 
                 // Top Left Image
                 Positioned(
-                  top: 140,
-                  left: 40,
+                  top: 120,
+                  left: 30,
                   child: Container(
-                    width: 80,
-                    height: 80,
+                    width: 100,
+                    height: 100,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/boardimage8.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+
+                // Top Right Image
+                Positioned(
+                  top: 90,
+                  right: 10,
+                  child: Container(
+                    width: 100,
+                    height: 100,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.white,
@@ -53,21 +73,19 @@ class OnboardingScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-
-                // Top Right Image
                 Positioned(
-                  top: 90,
-                  right: 20,
+                  top: 375,
+                  right: 130,
                   child: Container(
-                    width: 110,
-                    height: 110,
+                    width: 100,
+                    height: 100,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Colors.white,
                     ),
                     child: ClipOval(
                       child: Image.asset(
-                        'assets/images/boardimage2.png',
+                        'assets/images/boardimage3.png',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -87,7 +105,7 @@ class OnboardingScreen extends StatelessWidget {
                     ),
                     child: ClipOval(
                       child: Image.asset(
-                        'assets/images/boardimage3.png',
+                        'assets/images/boardimage2.png',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -97,9 +115,28 @@ class OnboardingScreen extends StatelessWidget {
                 // Middle Right Image
                 Positioned(
                   top: 260,
+                  right: 2,
+                  child: Container(
+                    width: 90,
+                    height: 75,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white,
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/boardimage4.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ),
+
+                Positioned(
+                  top: 360,
                   right: 20,
                   child: Container(
-                    width: 75,
+                    width: 95,
                     height: 75,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
